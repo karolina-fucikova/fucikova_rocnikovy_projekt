@@ -17,6 +17,6 @@ public class Reservation {
     private String customerEmail;
     private LocalDateTime reservationTime;
 
-    // Volitelně můžeš přidat další pole, např. název výletu jako String:
+    
     private String tripName;
 }
