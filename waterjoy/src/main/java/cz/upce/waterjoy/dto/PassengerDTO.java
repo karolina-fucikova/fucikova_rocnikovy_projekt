@@ -9,5 +9,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class PassengerDTO {
     private String name;
-    private String birthDate; // pokud chceš, může být LocalDate, ale String je jednodušší pro JSON
+    private String birthDate;
 }
