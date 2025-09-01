@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/hamburger.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inder&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./hamburger.js"></script>
+    <title>Waterjoy | Destinace</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inline">
+        <div class="header__kontakt">
+          <a href="tel://+420736220130" class="telefon">
+            <img src="./ico/telephone.svg" alt="telefon" />
+            <p>+420 736 220 130</p>
+          </a>
+          <a href="mailto://info@watejoy.cz" class="posta">
+            <img src="./ico/email.svg" alt="schránka" />
+            <p>info@waterjoy.cz</p>
+          </a>
+        </div>
+        <a href="./login.html" class="header__profile">
+          <img src="./ico/Profile.svg" alt="profil" />
+          <p class="icon-profile">Přihlášení</p>
+        </a>
+      </div>
+      <div class="header__navigace">
+        <div class="hamburger-row">
+          <div class="navbar__logotext">
+            <a
+              href="./index.html"
+              class="navbar__logo img-responsive header__logo"
+              ><img
+                src="./ico/logo.svg"
+                alt="Waterjoy"
+                class="logo--text"
+              />Waterjoy</a
+            >
+          </div>
+          <a
+            href="javascript:void(0)"
+            class="hamburger hamburger-btn hamburger-zone"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <nav class="navbar hamburger-nav hamburger-zone">
+          <menu class="nav__pages">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Úvod</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./destinace.html">Destinace</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pujcovna.html">Půjčovna</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./kontakt.html">Kontakt</a>
+            </li>
+          </menu>
+        </nav>
+      </div>
+    </header>
+    <main class="destinace">
+      <section class="destinace_uvod">
+        <h1>Destinace</h1>
+        <div class="drobenka">
+          <img src="./ico/domek.svg" alt="home" />
+          <a href="./index.html">Úvod</a>
+          <span class="drobenka__span"></span>
+          <a href="./destinace.html">Destinace</a>
+        </div>
+      </section>
+      <section class="destinace__nabidka" id="Chorvatsko">
+        <div class="destinace__popis">
+          <div class="destinace__item">
+            <h3 class="destinace__country">Chorvatsko</h3>
+            <p class="country__text">
+              Chorvatsko je oblíbenou turistickou destinací díky nádhernému
+              Jadranu, historickým městům jako Dubrovník, Split či Zadar a
+              malebným ostrovům. Nabízí čisté pláže, národní parky, skvělé víno
+              a kuchyni, což z něj činí ideální místo pro relax i aktivní
+              dovolenou.
+            </p>
+            <a href="./detail.html" class="more-info-btn">Zjistit více</a>
+            <div class="price__item">
+              <p class="price-tag">Cena: 12 600 Kč</p>
+              <a href="./objednavka.html" class="formular-btn"
+                >Objednat zájezd</a
+              >
+            </div>
+          </div>
+          <img
+            src="./images/croatia.jpg"
+            alt="Croatia"
+            class="destinace__img"
+          />
+        </div>
+      </section>
+      <section class="destinace__nabidka" id="Slovinsko">
+        <div class="destinace__popis">
+          <div class="destinace__item">
+            <h3 class="destinace__country">Slovinsko</h3>
+            <p class="country__text">
+              Slovinsko je skrytým pokladem pro milovníky vody díky smaragdové
+              řece Soče, která je rájem pro vodáky a kajakáře. Jeho krátké
+              pobřeží Jaderského moře nabízí půvabná města jako Piran a
+              Portorož. Slovinsko se pyšní také jezery, například slavným
+              Bledským jezerem, obklopeným horami, a klidným Bohinjským jezerem,
+              ideálním pro odpočinek i vodní sporty.
+            </p>
+            <a href="./detail.html" class="more-info-btn">Zjistit více</a>
+            <div class="price__item">
+              <p class="price-tag">Cena: 16 800 Kč</p>
+              <a href="./objednavka.html" class="formular-btn"
+                >Objednat zájezd</a
+              >
+            </div>
+          </div>
+          <img
+            src="./images/slovinsko.jpg"
+            alt="Slovinsko"
+            class="destinace__img"
+          />
+        </div>
+      </section>
+      <section class="destinace__nabidka" id="Rakousko">
+        <div class="destinace__popis">
+          <div class="destinace__item">
+            <h3 class="destinace__country">Rakousko</h3>
+            <p class="country__text">
+              Rakousko láká návštěvníky průzračnými alpskými jezery, jako je
+              Wolfgangsee nebo Hallstätter See, která jsou oblíbená pro plavání,
+              veslování a paddleboarding. Řeka Dunaj nabízí nezapomenutelnou
+              vodáckou atmosféru, zejména při plavbách v úseku Wachau s vinicemi
+              a historickými městy. Rakouské lázně, například Bad Gastein,
+              dodávají vodní dovolené nádech relaxace.
+            </p>
+            <a href="./detail.html" class="more-info-btn">Zjistit více</a>
+            <div class="price__item">
+              <p class="price-tag">Cena: 20 400 Kč</p>
+              <a href="./objednavka.html" class="formular-btn"
+                >Objednat zájezd</a
+              >
+            </div>
+          </div>
+          <img
+            src="./images/rakousko.jpg"
+            alt="Rakousko"
+            class="destinace__img"
+          />
+        </div>
+      </section>
+      <section class="destinace__nabidka" id="Polsko">
+        <div class="destinace__popis">
+          <div class="destinace__item">
+            <h3 class="destinace__country">Polsko</h3>
+            <p class="country__text">
+              Rakousko láká návštěvníky průzračnými alpskými jezery, jako je
+              Wolfgangsee nebo Hallstätter See, která jsou oblíbená pro plavání,
+              veslování a paddleboarding. Řeka Dunaj nabízí nezapomenutelnou
+              vodáckou atmosféru, zejména při plavbách v úseku Wachau s vinicemi
+              a historickými městy. Rakouské lázně, například Bad Gastein,
+              dodávají vodní dovolené nádech relaxace.
+            </p>
+            <a href="./detail.html" class="more-info-btn">Zjistit více</a>
+            <div class="price__item">
+              <p class="price-tag">Cena: 14 600 Kč</p>
+              <a href="./objednavka.html" class="formular-btn"
+                >Objednat zájezd</a
+              >
+            </div>
+          </div>
+          <img src="./images/polsko.jpg" alt="Polsko" class="destinace__img" />
+        </div>
+      </section>
+      <section class="destinace__nabidka" id="Slovensko">
+        <div class="destinace__popis">
+          <div class="destinace__item">
+            <h3 class="destinace__country">Slovensko</h3>
+            <p class="country__text">
+              Slovensko nabízí pestré vodní zážitky od termálních lázní v
+              Piešťanech a Bešeňové po vodní nádrže jako Liptovská Mara,
+              oblíbenou pro plachtění a windsurfing. Pro milovníky raftingu je
+              řeka Váh nebo Dunajec v Tatrách ideální volbou. Přírodní termální
+              koupaliště, například Kalameny, přidávají dovolené zvláštní
+              kouzlo.
+            </p>
+            <a href="./detail.html" class="more-info-btn">Zjistit více</a>
+            <div class="price__item">
+              <p class="price-tag">Cena: 15 500 Kč</p>
+              <a href="./objednavka.html" class="formular-btn"
+                >Objednat zájezd</a
+              >
+            </div>
+          </div>
+          <img
+            src="./images/slovensko.jpg"
+            alt="Slovensko"
+            class="destinace__img"
+          />
+        </div>
+      </section>
+      <section class="destinace__nabidka" id="Italie">
+        <div class="destinace__popis">
+          <div class="destinace__item">
+            <h3 class="destinace__country">Itálie</h3>
+            <p class="country__text">
+              Itálie se pyšní pestrým pobřežím Středozemního moře s místy jako
+              Amalfi, Ligurie nebo Sardinie, kde průzračná voda láká k plavání a
+              šnorchlování. Severská jezera, jako Lago di Garda či Lago di Como,
+              jsou centrem pro vodní sporty i odpočinek. Kanály v Benátkách pak
+              nabízejí unikátní atmosféru pro romantické plavby gondolou.
+            </p>
+            <a href="./detail.html" class="more-info-btn">Zjistit více</a>
+            <div class="price__item">
+              <p class="price-tag">Cena: 21 400 Kč</p>
+              <a href="./objednavka.html" class="formular-btn"
+                >Objednat zájezd</a
+              >
+            </div>
+          </div>
+          <img src="./images/italie.jpg" alt="Italie" class="destinace__img" />
+        </div>
+      </section>
+      <section class="destinace__nabidka" id="Bosna">
+        <div class="destinace__popis">
+          <div class="destinace__item">
+            <h3 class="destinace__country">Bosna a Hercegovina</h3>
+            <p class="country__text">
+              Bosna a Hercegovina je proslulá divokými řekami, jako je Una nebo
+              Neretva, kde rafting přitahuje dobrodruhy z celé Evropy. Krásná
+              přírodní koupaliště jako Kravické vodopády jsou ideální pro
+              osvěžení. Mostar se svým ikonickým mostem přes Neretvu přidává
+              kulturní rozměr k vodním zážitkům.
+            </p>
+            <a href="./detail.html" class="more-info-btn">Zjistit více</a>
+            <div class="price__item">
+              <p class="price-tag">Cena: 23 300 Kč</p>
+              <a href="./objednavka.html" class="formular-btn"
+                >Objednat zájezd</a
+              >
+            </div>
+          </div>
+          <img src="./images/bosna.jpg" alt="Bosna" class="destinace__img" />
+        </div>
+      </section>
+      <section class="destinace__nabidka" id="Cerna-hora">
+        <div class="destinace__popis">
+          <div class="destinace__item">
+            <h3 class="destinace__country">Černá hora</h3>
+            <p class="country__text">
+              Černá Hora láká průzračnými plážemi Jaderského moře, zejména v
+              oblasti Budvy a Kotoru. Boka Kotorská, nádherný přírodní fjord, je
+              ideální pro plavby a objevování historických měst. Řeka Tara,
+              obklopená hlubokým kaňonem, je rájem pro rafting i kanoistiku, což
+              z Černé Hory dělá nezapomenutelnou destinaci pro milovníky vody.
+            </p>
+            <a href="./detail.html" class="more-info-btn">Zjistit více</a>
+            <div class="price__item">
+              <p class="price-tag">Cena: 25 500 Kč</p>
+              <a href="./objednavka.html" class="formular-btn"
+                >Objednat zájezd</a
+              >
+            </div>
+          </div>
+          <img
+            src="./images/cerna-hora.jpg"
+            alt="Cerna hora"
+            class="destinace__img"
+          />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__block">
+        <a href="./index.html" class="footer__logo img-responsive footer__logo2"
+          ><img
+            src="./ico/logo.svg"
+            alt="Waterjoy"
+            class="footer__logo--text"
+          />Waterjoy</a
+        >
+        <div class="footer__blok2">
+          <div class="footer__item">
+            <h3 class="footer__h3">Kontakt</h3>
+            <div class="footer__kontakt">
+              <a href="tel://+420736220130" class="footer__a">
+                <img src="./ico/telephone.svg" alt="telefon" /> +420 736 220
+                130</a
+              >
+              <a href="mailto://info@l3web.cz" class="footer__a">
+                <img src="./ico/email.svg" alt="posta" /> info@waterjoy.cz</a
+              >
+              <a href="https://www.youtube.com/"
+                ><img src="./ico/youtube.svg" alt="YouTube" />waterjoy2015</a
+              >
+            </div>
+          </div>
+          <div class="footer__item">
+            <h3 class="footer__h3">Adresa</h3>
+            <p>Masarykovo nám. 2799</p>
+            <p>530 02 Pardubice I</p>
+          </div>
+        </div>
+      </div>
+      <div class="sec__footer--line">
+        <span class="footer__line"></span>
+      </div>
+      <div class="footer__item--underline">
+        <div class="footer__underline--text">
+          <a href="https://pslib.cz/" class="footer__a"
+            >&copy; 2024 Waterjoy.cz s.r.o</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

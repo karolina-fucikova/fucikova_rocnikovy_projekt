@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/hamburger.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inder&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./hamburger.js"></script>
+    <title>Waterjoy | Objednávka</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inline">
+        <div class="header__kontakt">
+          <a href="tel://+420736220130" class="telefon">
+            <img src="./ico/telephone.svg" alt="telefon" />
+            <p>+420 736 220 130</p>
+          </a>
+          <a href="mailto://info@watejoy.cz" class="posta">
+            <img src="./ico/email.svg" alt="schránka" />
+            <p>info@waterjoy.cz</p>
+          </a>
+        </div>
+        <a href="./login.html" class="header__profile">
+          <img src="./ico/Profile.svg" alt="profil" />
+          <p class="icon-profile">Přihlášení</p>
+        </a>
+      </div>
+      <div class="header__navigace">
+        <div class="hamburger-row">
+          <div class="navbar__logotext">
+            <a
+              href="./index.html"
+              class="navbar__logo img-responsive header__logo"
+              ><img
+                src="./ico/logo.svg"
+                alt="Waterjoy"
+                class="logo--text"
+              />Waterjoy</a
+            >
+          </div>
+          <a
+            href="javascript:void(0)"
+            class="hamburger hamburger-btn hamburger-zone"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <nav class="navbar hamburger-nav hamburger-zone">
+          <menu class="nav__pages">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Úvod</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./destinace.html">Destinace</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pujcovna.html">Půjčovna</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./kontakt.html">Kontakt</a>
+            </li>
+          </menu>
+        </nav>
+      </div>
+    </header>
+    <main class="objednavka__main">
+      <h1>Objednávka zájezdu</h1>
+      <div class="drobenka">
+        <img src="./ico/domek.svg" alt="home" />
+        <a href="./detail.html">Detail destinace</a>
+        <span class="drobenka__span"></span>
+        <a href="./objednavka.html">Objednávka</a>
+      </div>
+      <p>
+        Po odeslání přihlášky Vás co nejdříve kontaktujeme (telefonicky nebo na
+        Vámi zadanou e-mailovou adresu) pro doplnění zbývajících informací a
+        odpovězení Vašich dotazů.
+      </p>
+      <div>
+        <div>
+          <p><b>Zájezd</b></p>
+          <p>Chorvatsko - Vodácký zájezd po řece Zrmanja a Jadranu</p>
+        </div>
+        <div>
+          <p><b>Termín</b></p>
+          <p>13. 7. 2025 - 20. 7. 2025</p>
+        </div>
+        <div>
+          <p><b>Cena</b></p>
+          <p>9 900 Kč</p>
+        </div>
+      </div>
+      <section>
+        <h3>Kontaktní údaje</h3>
+        <div class="formular">
+          <div>
+            <label for="jmeno">Jméno a Příjmení</label>
+            <input
+              type="text"
+              id="jmeno"
+              name="jmeno"
+              placeholder="Pavel Novák"
+            />
+          </div>
+          <div>
+            <label for="ulice">Ulice a č.p.</label>
+            <input
+              type="text"
+              id="ulice"
+              name="ulice"
+              placeholder="Modrá, 10"
+            />
+          </div>
+          <div>
+            <label for="mesto">Město</label>
+            <input type="text" id="mesto" name="mesto" placeholder="Praha" />
+          </div>
+          <div>
+            <label for="psc">PSČ</label>
+            <input type="text" id="psc" name="psc" placeholder="403 05" />
+          </div>
+          <div>
+            <label for="email">E-mail</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="novak@gmail.com"
+            />
+          </div>
+          <div>
+            <label for="telefon">Telefon</label>
+            <input
+              type="text"
+              id="telefon"
+              name="telefon"
+              placeholder="+420 123 456 789"
+            />
+          </div>
+        </div>
+        <div>
+          <label for="birth-date">Datum narození</label>
+          <input type="date" id="birth-date" name="birth-date" placeholder="" />
+        </div>
+      </section>
+      <section>
+        <h3>Spolucestující</h3>
+        <div>
+          <label for="passenger-count">Počet</label>
+          <input
+            type="number"
+            id="passenger-count"
+            name="passenger-count"
+            min="1"
+            max="10"
+          />
+        </div>
+        <div id="passenger-fields"></div>
+      </section>
+      <section>
+        <h3>Další informace</h3>
+        <div class="more__info--blok">
+          <div>
+            <label for="city">Město</label>
+            <select id="city" name="city">
+              <option value="pardubice">Pardubice</option>
+              <option value="praha">Praha</option>
+              <option value="vary">Karlovy Vary</option>
+              <option value="plzen">Plzeň</option>
+            </select>
+          </div>
+          <div>
+            <label for="birth-date">Informace, dotazy, přání </label>
+            <input
+              type="text"
+              id="any"
+              name="notion"
+              placeholder=""
+            />
+          </div>
+        </div>
+        <div class="potvrzeni__check">
+          <input
+            type="checkbox"
+            id="check"
+            name="checkbox"
+
+          />
+          <p>
+            Potvrzuji, že jsem si přečetl Reklamační řád a Všeobecné smluvní
+            podmínky prodeje, účasti, rozsahu a kvality služeb zahrnutých do cen
+            zájezdů cestovní kanceláře Waterjoy s.r.o. a v plném rozsahu je
+            respektuji a souhlasím s nimi. 
+          </p>
+        </div>
+        <div class="potvrzeni__check">
+          <input
+            type="checkbox"
+            id="chck"
+            name="checkbox"
+
+          />
+          <p>Souhlasím s podmínkami zpracování osobních údajů.</p>
+        </div>
+        <a href="./dekujeme.html" class="post-btn"
+          ><input type="submit" value="Odeslat"
+        /></a>
+      </section>
+      <ul class="obj__seznam">
+        <li><a href="#">Všeobecné podmínky a reklamační řád</a></li>
+        <li><a href="#">Informace o zpracování osobních údajů</a></li>
+      </ul>
+      <p class="zakon__udaje">
+        Osobní údaje návštěvníků serveru www.waterjoy.cz jsou chráněny v souladu
+        s platnými zákony České republiky o ochraně osobních dat, především
+        podle zákona č. 101/2000 Sb. o ochraně osobních údajů. Zákazník
+        poskytnutím svých osobních udajů a odesláním objednávky uděluje souhlas
+        se správou, zpracováním a uchováváním svých osobních údajů
+        provozovatelem serveru. Tyto činnosti budou prováděny v souladu s
+        příslušnými právními předpisy, zejména se zákonem č. 101/2000 Sb. o
+        ochraně osobních údajů.
+      </p>
+    </main>
+    <footer>
+      <div class="footer__block">
+        <a href="./index.html" class="footer__logo img-responsive footer__logo2"
+          ><img
+            src="./ico/logo.svg"
+            alt="Waterjoy"
+            class="footer__logo--text"
+          />Waterjoy</a
+        >
+        <div class="footer__blok2">
+          <div class="footer__item">
+            <h3 class="footer__h3">Kontakt</h3>
+            <div class="footer__kontakt">
+              <a href="tel://+420736220130" class="footer__a">
+                <img src="./ico/telephone.svg" alt="telefon" /> +420 736 220
+                130</a
+              >
+              <a href="mailto://info@l3web.cz" class="footer__a">
+                <img src="./ico/email.svg" alt="posta" /> info@waterjoy.cz</a
+              >
+              <a href="https://www.youtube.com/"
+                ><img src="./ico/youtube.svg" alt="YouTube" />waterjoy2015</a
+              >
+            </div>
+          </div>
+          <div class="footer__item">
+            <h3 class="footer__h3">Adresa</h3>
+            <p>Masarykovo nám. 2799</p>
+            <p>530 02 Pardubice I</p>
+          </div>
+        </div>
+      </div>
+      <div class="sec__footer--line">
+        <span class="footer__line"></span>
+      </div>
+      <div class="footer__item--underline">
+        <div class="footer__underline--text">
+          <a href="https://pslib.cz/" class="footer__a"
+            >&copy; 2025 Waterjoy.cz s.r.o</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    document.querySelector('.post-btn input[type="submit"]').addEventListener('click', async (e) => {
+    e.preventDefault();
+
+    const orderData = {
+      jmeno: document.getElementById('jmeno').value,
+      ulice: document.getElementById('ulice').value,
+      mesto: document.getElementById('mesto').value,
+      psc: document.getElementById('psc').value,
+      email: document.getElementById('email').value,
+      telefon: document.getElementById('telefon').value,
+      birthDate: document.getElementById('birth-date').value,
+      passengerCount: document.getElementById('passenger-count').value,
+      // TODO: cyklus pro načtení spolucestujících
+      passengers: [],
+      city: document.getElementById('city').value,
+      note: document.querySelector('input[name="birth-date"]').value
+    };
+
+    try {
+      const res = await fetch('http://localhost:8081/api/auth/orders', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(orderData)
+      });
+
+      const text = await res.text();
+      alert(text);
+      if (res.ok) window.location.href = './dekujeme.html';
+    } catch (err) {
+      console.error(err);
+      alert('Chyba při odesílání objednávky.');
+    }
+  });
+
+
+    const countInput = document.getElementById('passenger-count');
+    const fieldsContainer = document.getElementById('passenger-fields');
+
+    countInput.addEventListener('input', () => {
+      const count = parseInt(countInput.value, 10) || 0;
+      fieldsContainer.innerHTML = ''; // vyčistí staré bloky
+
+      for (let i = 1; i <= count; i++) {
+        const wrapper = document.createElement('div');
+        wrapper.style.margin = '12px 0';
+        wrapper.innerHTML = `
+        <h4>Spolucestující ${i}</h4>
+        <label for="name-${i}">Jméno</label>
+        <input type="text" id="name-${i}" name="name-${i}" placeholder="Monika Nováková" />
+        
+        <label for="address-${i}">Bydliště</label>
+        <input type="text" id="address-${i}" name="address-${i}" placeholder="Modrá 10, Praha" />
+        
+        <label for="birth-${i}">Datum narození</label>
+        <input type="date" id="birth-${i}" name="birth-${i}" />
+      `;
+        fieldsContainer.appendChild(wrapper);
+      }
+    });
+  </script>
+</html>

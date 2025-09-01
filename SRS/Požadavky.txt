@@ -1,0 +1,22 @@
+Funkční požadavky:
+
+- Prezentace nabídky zájezdů: Stránka s detailním popisem jednotlivých vodáckých výprav (lokalita, délka, obtížnost, cena, fotogalerie)
+- Online rezervace a platba: Rezervační formulář pro výběr termínu a počtu osob, možnost online platby (platební karta, bankovní převod, případně záloha)
+- Profil společnosti a příběh: Stránka "O nás" s příběhem vzniku Waterjoy, seznam instruktorů s jejich zkušenostmi a fotografiemi
+- Blog a vodácké tipy: Sekce s články o vodáctví, bezpečnosti na vodě a doporučené výbavě, možnost komentování a sdílení na sociálních sítích
+- Fotogalerie a videa: Prezentace autentických zážitků z výprav (fotografie a videa), možnost přidávat recenze od klientů
+- Kontakt a podpora: Kontaktní formulář s možností dotazu na míru
+- Členství a věrnostní program: Registrace uživatelů pro přístup k věrnostním slevám, historie rezervací a možnost správy účtu
+
+
+Nefunnkční požadavky:
+
+- Responzivní design: Web musí být plně funkční na mobilních telefonech, tabletech i počítačích
+- Rychlost načítání: Stránky by se měly načítat do 3 sekund, optimalizované obrázky a videa pro rychlé načítání
+- Bezpečnost: SSL certifikát pro šifrované připojení, bezpečná platební brána splňující PCI-DSS standardy
+- SEO optimalizace: Strukturovaná data pro vyhledávače, optimalizace klíčových slov spojených s vodáctvím
+- Modulární rozšiřitelnost: Možnost snadno přidávat nové destinace a články do blogu
+- Škálovatelnost: Web by měl být navržen tak, aby zvládl rostoucí počet uživatelů a rezervací bez ztráty výkonu
+- Integrace se sociálními sítěmi: Možnost sdílení článků, fotek a zájezdů na Facebook, Instagram a další platformy
+- Kompatibilita: Systém musí fungovat v prohlížečích Edge, Opera, Firefox, Safari, Chome na iOS a Android
+- Výkon: Web musí zvládnout 500 souběžných uživatelů s dobou odezvy kratší než 2 sekundy.

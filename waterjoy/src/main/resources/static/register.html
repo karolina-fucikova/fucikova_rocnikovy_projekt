@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/hamburger.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./hamburger.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inder&display=swap"
+      rel="stylesheet"
+    />
+    <title>Waterjoy | Registrace</title>
+    <style>
+      button {
+        width: 100%;
+        padding: 10px;
+        background: #18b1bc;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #106285;
+      }
+      .toggle {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 14px;
+      }
+      .toggle a {
+        color: #106285;
+        text-decoration: none;
+      }
+      .toggle a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inline">
+        <div class="header__kontakt">
+          <a href="tel://+420736220130" class="telefon">
+            <img src="./ico/telephone.svg" alt="telefon" />
+            <p>+420 736 220 130</p>
+          </a>
+          <a href="mailto://info@watejoy.cz" class="posta">
+            <img src="./ico/email.svg" alt="schránka" />
+            <p>info@waterjoy.cz</p>
+          </a>
+        </div>
+        <a href="./login.html" class="header__profile">
+          <img src="./ico/Profile.svg" alt="profil" />
+          <p class="icon-profile">Přihlášení</p>
+        </a>
+      </div>
+      <div class="header__navigace">
+        <div class="hamburger-row">
+          <div class="navbar__logotext">
+            <a
+              href="./index.html"
+              class="navbar__logo img-responsive header__logo"
+              ><img
+                src="./ico/logo.svg"
+                alt="Waterjoy"
+                class="logo--text"
+              />Waterjoy</a
+            >
+          </div>
+          <a
+            href="javascript:void(0)"
+            class="hamburger hamburger-btn hamburger-zone"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <nav class="navbar hamburger-nav hamburger-zone">
+          <menu class="nav__pages">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Úvod</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./destinace.html">Destinace</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pujcovna.html">Půjčovna</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./kontakt.html">Kontakt</a>
+            </li>
+          </menu>
+        </nav>
+      </div>
+    </header>
+    <main class="register__blok">
+      <div class="register__container">
+        <h2>Registrace</h2>
+        <form id="registerForm">
+          <input
+            type="text"
+            name="username"
+            placeholder="Uživatelské jméno"
+            required
+          />
+          <input type="email" name="email" placeholder="E-mail" required />
+          <input type="password" name="password" placeholder="Heslo" required />
+          <input
+            type="password"
+            name="passwordagain"
+            placeholder="Heslo znovu"
+            required
+          />
+          <button type="submit">Registrovat</button>
+        </form>
+        <div class="toggle">Máš účet? <a href="login.html">Přihlas se</a></div>
+        <p id="responseMessage"></p>
+      </div>
+    </main>
+    <footer>
+      <div class="footer__block">
+        <a href="./index.html" class="footer__logo img-responsive footer__logo2"
+          ><img
+            src="./ico/logo.svg"
+            alt="Waterjoy"
+            class="footer__logo--text"
+          />Waterjoy</a
+        >
+        <div class="footer__blok2">
+          <div class="footer__item">
+            <h3 class="footer__h3">Kontakt</h3>
+            <div class="footer__kontakt">
+              <a href="tel://+420736220130" class="footer__a">
+                <img src="./ico/telephone.svg" alt="telefon" /> +420 736 220
+                130</a
+              >
+              <a href="mailto://info@l3web.cz" class="footer__a">
+                <img src="./ico/email.svg" alt="posta" /> info@waterjoy.cz</a
+              >
+              <a href="https://www.youtube.com/"
+                ><img src="./ico/youtube.svg" alt="YouTube" />waterjoy2015</a
+              >
+            </div>
+          </div>
+          <div class="footer__item">
+            <h3 class="footer__h3">Adresa</h3>
+            <p>Masarykovo nám. 2799</p>
+            <p>530 02 Pardubice I</p>
+          </div>
+        </div>
+      </div>
+      <div class="sec__footer--line">
+        <span class="footer__line"></span>
+      </div>
+      <div class="footer__item--underline">
+        <div class="footer__underline--text">
+          <a href="https://pslib.cz/" class="footer__a"
+            >&copy; 2025 Waterjoy.cz s.r.o</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    document
+      .getElementById('registerForm')
+      .addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(this);
+        const username = formData.get('username');
+        const email = formData.get('email');
+        const password = formData.get('password');
+        const passwordagain = formData.get('passwordagain');
+
+        // jednoduchá kontrola hesel na frontendu
+        if (password !== passwordagain) {
+          document.getElementById('responseMessage').textContent =
+            'Hesla se neshodují!';
+          return;
+        }
+
+        try {
+          const res = await fetch('/api/auth/register', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              username,
+              email,
+              password,
+            }),
+          });
+
+          const data = await res.text();
+          document.getElementById('responseMessage').textContent = data;
+
+          if (res.ok) {
+            // po úspěšné registraci přesměruj
+            window.location.href = './registerok.html';
+          }
+        } catch (error) {
+          console.error('Chyba při registraci:', error);
+          document.getElementById('responseMessage').textContent =
+            'Chyba při komunikaci se serverem.';
+        }
+      });
+  </script>
+</html>
