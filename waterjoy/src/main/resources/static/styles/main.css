@@ -1111,11 +1111,10 @@ footer {
         max-width: 600px;
     }
 
-    .dekujeme-text h3 {
-        text-align: start;
+    .dekujeme-text {
+        display: flex;
+        flex-direction: column;
     }
-
-
 
     /*Q-pujcovna*/
 
